@@ -1,4 +1,5 @@
 let img = new Image();
+img.setAttribute('crossOrigin', 'anonymous');
 function getUserImage(file) {
     if (typeof file === 'undefined')
         img.src = 'https://s3.amazonaws.com/colten-my-images/santa.jpg';

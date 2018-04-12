@@ -1,11 +1,14 @@
 <head>
     <link rel='stylesheet' type='text/css' href='./style.css'>
-    <script src='./asdf.js'></script
+    <script src='./index.js'></script
 </head>
 <body>
-    <canvas id='canvas' width='200px' height='200px'></canvas>  
-    <canvas id='canvas2' width='200px' height='200px'></canvas>  
-    <input id='blocks' type='range' min='1' max='50'></input>
+    <input type='file' id='fileElem' accept='image/*' onchange='getUserImage(this.files[0])'>
+    <br>
+    <canvas id='canvas1' width='400px' height='400px'></canvas>
+    <canvas id='canvas2' width='400px' height='400px'></canvas>  
+    <canvas id='canvas3' width='400px' height='400px'></canvas>  
+    <input id='blocks' type='range' min='10' max='22'></input>
     <div id='b'></div>
 <body>
 

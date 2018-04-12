@@ -3,5 +3,7 @@ body {
 }
 
 canvas {
-    background-color: lightgray;
+    background-color: transparent;
 }
+
+

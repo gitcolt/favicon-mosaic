@@ -1,7 +1,7 @@
 let img = new Image();
 function getUserImage(file) {
     if (typeof file === 'undefined')
-        img.src = 'santa.jpg';
+        img.src = 'https://s3.amazonaws.com/colten-my-images/santa.jpg';
     else
         img.src = window.URL.createObjectURL(file);
 }
@@ -10,7 +10,7 @@ window.onload = function() {
     blocks.value = 10;
     b.innerHTML = blocks.value;
     let faviconStrip = new Image();
-    faviconStrip.src = 'strip.png';
+    faviconStrip.src = 'https://s3.amazonaws.com/colten-my-images/strip.png';
     let faviconStripIsLoaded = false;
     faviconStrip.onload = function() {
         faviconStripIsLoaded = true;
